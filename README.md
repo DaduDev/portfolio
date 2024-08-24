@@ -1,20 +1,18 @@
+# Getting Started with Create React App
 
-**Cloning an React project and running locally**
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `git clone https://github.com/nithingooud/nithin-portfolio`
-### `cd nithin-portfolio`
+## Available Scripts
 
-**Look at the files and folder of the project**
-**Delete node_modules folder and package-lock.json file if exists**
+In the project directory, you can run:
 
-**Run this following commands**
-### `npm install` 
-this will create node_modules folder and package-lock.json
+### `npm start`
 
-### `npm start` 
-it will start your react app
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Now go to http://localhost:3000/ to visit your app
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
 ### `npm test`
 
