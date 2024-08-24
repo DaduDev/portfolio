@@ -38,12 +38,12 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
   
 const Projects = () => {
     return (
-        <div className="bg-black">
-            <div className="flex flex-wrap gap-7 justify-center items-center m-12 p-12">
+        <div className="bg-black pb-10">
+            <div className="flex flex-wrap gap-7 justify-center items-center m-12 p-12 pt-20 pb-40">
                 {project.map((item, index) => (
                     <ProjectCard
                         key={index}
-                        image={item.image}
+                        // image={item.image}
                         title={item.title}
                         description={item.description}
                         links={item.links}
@@ -61,23 +61,23 @@ const Projects = () => {
 export const project = [
     {
         title:'Feed-Back App',
-        description:'Co People is a dynamic web application I crafted using React, Node JS and React. This project is a modern and engaging social platform that allows users to connect, share content and interact seamlessly.',
+        description:'Feed-Back App is a project built using NextJS and Tailwind CSS. This project is a modern and engaging social platform that allows users to send anonymous message to a user using that particular user unique link.',
         image: {vpn},
-        git:'https://github.com/nithingooud/CoPeople',
+        git:'https://github.com/DaduDev/feedbackapp',
         technologies:['NextJS', 'MongoDb' ,'ReactJS' , 'Tailwind CSS', 'Shadcn UI']
     },
     {
         title:'Quiz App',
-        description:'SnapShot is a stunning portfolio that I exclusively designed using React JS and tailwind CSS.This Project serves as a representation of a photographer’s work, highlighting their portfolio and services.',
+        description:'Quiz App is a project built using ReactJS and Firebase. This project is a simple application that helps users to play quizzes and at last, the users can see their score after completion of quiz. The quizzes will be loaded from the firebase database.',
         image: {copeople},
-        git:"https://github.com/nithingooud/vpn_studios",
+        git:"https://github.com/DaduDev/Quiz-App",
         technologies:[ 'React JS', 'Firebase']
     },
     {
         title: 'Todo-List',
-        description: 'This project is a modern and engaging social platform that allows users to connect, share content and interact seamlessly.',
+        description: 'Todo-List is a project built using ReactJS. This project is a simple application that helps users to add, delete and update their daily tasks. The tasks will be stored in the local storage of the browser.',
         image: {vpn},
-        git: '',
+        git: 'https://github.com/DaduDev/Todo-App',
         technologies: ['ReactJS']
     }
 ]
