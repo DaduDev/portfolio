@@ -28,16 +28,16 @@ const Experience = () => {
         <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"> 
           <div className="p-4 sm:p-6">
               <a href="#">
-                  <h5 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">Programming Languages</h5>
+                  <h5 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">Development</h5>
               </a>
               <p className="font-normal text-sm sm:text-base md:text-lg text-gray-300 dark:text-gray-400">
                 <ul>
-                  <li>Python</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
                   <li>JavaScript</li>
-                  <li>Java</li>
-                  <li>C</li>
-                  <li>C++</li>
-                  <li>SQL</li>
+                  <li>React</li>
+                  <li>React-Native</li>
+                  <li>Tailwind-CSS</li>
                 </ul>
               </p>
           </div>
@@ -45,16 +45,15 @@ const Experience = () => {
         <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"> 
           <div className="p-4 sm:p-6">
               <a href="#">
-                  <h5 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">Programming Languages</h5>
+                  <h5 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">Tools</h5>
               </a>
               <p className="font-normal text-sm sm:text-base md:text-lg text-gray-300 dark:text-gray-400">
                 <ul>
-                  <li>Python</li>
-                  <li>JavaScript</li>
-                  <li>Java</li>
-                  <li>C</li>
-                  <li>C++</li>
-                  <li>SQL</li>
+                  <li>Git</li>
+                  <li>VS Code</li>
+                  <li>Firebase</li>
+                  <li>MongoDB</li>
+                  <li>Vercel</li>
                 </ul>
               </p>
           </div>
