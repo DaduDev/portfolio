@@ -19,7 +19,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className="bg-gray-800 p-4 text-white fixed w-full z-10 top-0" style={{ cursor: 'default' }}>
+    <nav className="bg-gray-800 p-4 text-white w-full z-10 top-0" style={{ cursor: 'default' }}>
       <div className="mx-auto text-center flex w-5/6 justify-between">
         
         <div className="hidden sm:flex space-x-4 items-center text-sm">
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         <div className="hidden sm:flex space-x-4 items-center text-sm">
           <Link to='/projects'>Projects</Link>
-          <Link to='/experience'>Skills</Link>
+          <Link to='/skills'>Skills</Link>
           <Link to='/contact'>Contact</Link>
         </div>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
             <li><Link to='/' onClick={closeMobileMenu}>Home</Link></li>
             <li><Link to='/about' onClick={closeMobileMenu}>About</Link></li>
             <li><Link to='/projects' onClick={closeMobileMenu}>Projects</Link></li>
-            <li><Link to='/experience' onClick={closeMobileMenu}>Experince</Link></li>
+            <li><Link to='/skills' onClick={closeMobileMenu}>Skills</Link></li>
             <li><Link to='/contact' onClick={closeMobileMenu}>Contact</Link></li>
           </ul>
         </div>

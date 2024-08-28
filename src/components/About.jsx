@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
 import { services } from '../constants';
-import ButtonLink from './ButtonLink';
 import Footer from './Footer';
+import { Image } from 'react-bootstrap';
 
 const ServiceCard = ({ service }) => (
   <div className='sm:w-[250px] w-full'>
@@ -26,34 +26,42 @@ const ServiceCard = ({ service }) => (
 
 const About = () => {
   return (
-    <div>
+    <>
 
-      <div className='bg-black h-full w-full text-white sm:flex sm:justify-around about py-12 mt-8 overflow-x-hidden' id='about'>
-        <div className='flex flex-col justify-around'>
-          <div className='sm:px-16 px-2'>
-            <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
-            <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Shaik Dadapeer, a Computer Science with a passion for creating good web applications and captivating mobile applications.As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/dadapeer-shaik-762919273/' target='_blank'>Software developer</a> I specialize in both React and React-Native.
-              <br />
-              ✍️ Beyond coding, I love sharing my insights and experiences through engaging blogs on <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://dadudev.hashnode.dev/" target='_blank'>Hashnode</a>, where I delve into the intricacies of software development and technology trends.
-              On a different note, I'm also into photography📸. It's not just a hobby; I see it as a way to capture moments🌟📷, tell stories.</p>
-
-            <ButtonLink
-              url='https://drive.google.com/file/d/1cVI6X1N82dDUFCGKj-O7IMM-njAbxec1/view?usp=sharing'
-              text='View Resume →'
-              padding={`p-3`}
-            />
-
-          </div>
-          <div className='mt-20 flex justify-center flex-wrap gap-7'>
-            {services.map((service) => (
-              <ServiceCard service={service} />
-            ))}
-          </div>
+      <div className='bg-black h-full flex-col w-full text-white sm:flex sm:justify-around about overflow-x-hidden' id='about'>
+        <div className="flex flex-col min-h-[100dvh]">
+          <section className="w-full py-12 md:py-24 lg:py-32">
+            <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+              <Image
+                src="/Amogha.jpg"
+                width="550"
+                height="550"
+                alt="Developer"
+                className="mx-auto aspect-square overflow-hidden rounded-xl object-cover" 
+              />
+              <div className="space-y-4">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">John Doe</h1>
+                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                  I'm a passionate full-stack developer with a strong background in building modern web applications. I love
+                  crafting intuitive user experiences and solving complex problems.
+                </p>
+              <button onClick={() => {
+                window.location.href = "https://drive.google.com/file/d/1cVI6X1N82dDUFCGKj-O7IMM-njAbxec1/view?usp=sharing"
+              }} className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-md">View Resume →</button>
+              </div>
+              
+            </div>
+          </section>
+          
+        </div>
+        <div className=' flex justify-center flex-wrap gap-7 mb-10'>
+          {services.map((service) => (
+            <ServiceCard service={service} />
+          ))}
         </div>
       </div>
-      <Footer />
-    </div>
-  )
+  <Footer /></>
+  );
 }
 
 export default About;
