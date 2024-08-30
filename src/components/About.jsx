@@ -40,10 +40,12 @@ const About = () => {
                 className="mx-auto aspect-square overflow-hidden rounded-xl object-cover" 
               />
               <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">John Doe</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Shaik Dadapeer</h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  I'm a passionate full-stack developer with a strong background in building modern web applications. I love
-                  crafting intuitive user experiences and solving complex problems.
+                Hi, I'm a Computer Science student, with a passion for creating good web applications and captivating mobile applications. As a seasoned
+                Software developer, I specialize in both React and React-Native. I have a strong foundation in web development and mobile application development.
+                Beyond coding, I love sharing my insights and experiences through engaging blogs on <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://dadudev.hashnode.dev/" target='_blank'>Hashnode</a>, 
+                where I delve into the intricacies of software development and technology trends.
                 </p>
               <button onClick={() => {
                 window.location.href = "https://drive.google.com/file/d/1cVI6X1N82dDUFCGKj-O7IMM-njAbxec1/view?usp=sharing"
